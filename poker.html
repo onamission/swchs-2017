@@ -85,13 +85,6 @@
 			})
 
 			/**
-			 * Set the background image based on base64 data
-			 */ 
-			$(function(){
-				$(".back").css("background-image","url(data:image/png;base64," + cardBack);
-			})
-
-			/**
 			 * Toggles the class of an element
 			 */
 			function toggleClass( elName, className ){
@@ -262,6 +255,9 @@
 					row.append(cellContents);
 					table.append(row);
 				});
+
+				// Set the background image based on base64 data
+				$(".back").css("background-image","url(data:image/png;base64," + cardBack);
 			});
 		</script>
 	</body>
